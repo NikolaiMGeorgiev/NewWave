@@ -1,0 +1,224 @@
+.sidebar {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    min-width: fit-content;
+    width: 40vw;
+    height: 100vh;
+    margin-top: 0.4rem;
+    z-index: 2;
+    background-color: ghostwhite;
+    padding-top: 1vh;
+    padding-left: 2vw;
+}
+
+.sidebar button {
+    font-size: 4vh;
+    text-align: left;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 1.5vh;
+    color: grey;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.sidebar button:hover {
+    cursor: pointer;
+}
+
+#cart_title {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+#cart {
+    position: fixed;
+    display: none;
+    right: 0;
+    min-height: 70vh;
+    width: 500px;
+    max-width: 100%;
+    height: 70vh;
+    margin-top: 0.4rem;
+    z-index: 2;
+    background-color: ghostwhite;
+    overflow: auto;
+}
+
+#cart hr {
+    width: 95%;
+    border-top: #7a7a7a solid 2px;
+    z-index: 1;
+}
+
+#purchase {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+#purchase div img {
+    object-fit: scale-down;
+    width: 30%;
+}
+
+#purchase div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+}
+
+#purchase div div p {
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    bottom: 0;
+}
+
+#purchase div div p:first-of-type {
+    margin-bottom: 5vh;
+}
+
+#purchase div div p:nth-of-type(3) {
+    margin-top: 1vh;
+    top: 100%;
+    bottom: 0;
+}
+
+#purchase div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+}
+
+#total {
+    width: 100%;
+}
+
+#total p {
+    margin-left: 2%;
+    margin-top: 1vh;
+}
+
+.btn_close {
+    position: absolute;
+    align-self: flex-end;
+    cursor: pointer;
+    right: 2%;
+}
+
+
+.btn_close:focus, .btn_buy:focus, #purchase div div button {
+    outline: none;
+}
+
+.shop_section {
+    column-count: 2;
+    margin-top: 10vh;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    padding: 5vw;
+    background-color: #d4c9a3;
+    border: 2px solid black;
+    height: fit-content;
+}
+
+.item {
+    border: 2px solid black;
+    background-color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+    box-sizing: border-box;
+    overflow: auto;
+    width: fit-content;
+    min-width: 20vw;
+}
+
+.img_item {
+    max-width: 100%;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .img_item {
+        width: 100%;
+        -ms-interpolation-mode: bicubic;
+    }
+}
+
+.item_bottom_info {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+.item_bottom_info p {
+    text-align: center;
+    margin: 0.2rem;
+}
+
+.item_name {
+    position: relative;
+    display: block;
+    height: 5rem;
+}
+
+.btn_buy, #purchase div div button {
+    font-size: 2vh;
+    box-sizing: border-box;
+    width: 5em;
+    align-self: center;
+    margin-bottom: 1rem;
+    font-family: Garamond, sans-serif;
+    font-weight: bold;
+    background-color: #c19814;
+    color: whitesmoke;
+    border: none;
+    border-radius: 6px;
+}
+
+#purchase div div button {
+    align-self: normal;
+
+}
+
+.btn_buy:focus {
+    outline-color: black;
+}
+
+#menu {
+    position: fixed;
+    z-index: 1;
+    margin-top: 2vh;
+    object-fit: scale-down;
+    max-width: 10vh;
+    max-height: 10vh;
+}
+
+#menu_icon {
+    -ms-interpolation-mode: bicubic;
+    max-height: 8vw;
+    cursor: pointer;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    #menu_icon {
+        -ms-interpolation-mode: bicubic;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    #menu {
+        max-width: 20vh;
+        max-height: 20vh;
+    }
+}

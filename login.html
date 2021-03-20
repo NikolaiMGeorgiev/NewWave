@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="style/index_style.css">
+    <link rel="stylesheet" href="style/login_register_style.css">
+    <link rel="stylesheet" href="style/shop_style.css">
+    <script type="text/javascript" src="scripts/shop.js"></script>
+    <script type="text/javascript" src="scripts/form_validation.js"></script>
+</head>
+<body>
+<div class="header">
+    <nav id="gender_section">
+        <a class="gender" href="men.html">Men | </a>
+        <a class="gender" href="men.html">Women</a>
+    </nav>
+
+    <a href="index.html">
+        <img id="logo" src="img/icons/logo.png">
+    </a>
+
+    <div id="buttons">
+        <a href="login.html">
+            <button class="img_button" id="btn_profile"><img src="img/icons/account.png"></button>
+        </a>
+
+        <button class="img_button" id="btn_cart" onclick="showCart()"><img src="img/icons/shopping_cart.png"></button>
+    </div>
+</div>
+
+<div id="hr_container">
+    <hr id="logo_hr">
+</div>
+
+<div id="cart">
+    <button class="btn_close" id="btn_close_cart" onclick="hideCart()"><img src="img/icons/x.png"></button>
+    <p id="cart_title">Shopping Cart</p>
+    <div id="purchase">
+
+    </div>
+    <div id="total">
+        <hr id="total_hr">
+        <p>Total: <span id="sum">0</span>lv</p>
+    </div>
+</div>
+
+<div id="form_container_login">
+    <form action="#" method="post" class="form" id="login_form">
+        <p id="form_title">Log in</p>
+        <label for="email" class="lbl">Enter email:</label>
+        <input type="email" id="email" name="email" placeholder="E-mail">
+
+        <label for="password" class="lbl">Enter password:</label>
+        <input type="password" id="password" name="password" placeholder="Password">
+
+        <label class="lbl_error" id="error">Error</label>
+
+        <button class="btn_submit" type="button" onclick="checkLogin()">Log in</button>
+        <a class="link" href="register.html">Don't have an account? Click to register.</a>
+    </form>
+</div>
+
+</body>
+</html>

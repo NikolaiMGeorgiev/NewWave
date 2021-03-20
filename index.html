@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style/index_style.css">
+    <link rel="stylesheet" href="style/shop_style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NewWave</title>
+    <script src="scripts/shop.js"></script>
+</head>
+<body>
+<div id="cart">
+    <button class="btn_close" id="btn_close_cart" onclick="hideCart()"><img src="img/icons/x.png"></button>
+    <p id="cart_title">Shopping Cart</p>
+    <div id="purchase">
+
+    </div>
+    <div id="total">
+        <hr id="total_hr">
+        <p>Total: <span id="sum">0</span>lv</p>
+    </div>
+</div>
+
+<div class="header">
+    <nav id="gender_section">
+        <a class="gender" href="men.html">Men | </a>
+        <a class="gender" href="men.html">Women</a>
+    </nav>
+
+    <a href="index.html">
+        <img id="logo" src="img/icons/logo.png">
+    </a>
+
+    <div id="buttons">
+        <a href="login.html">
+            <button class="img_button" id="btn_profile"><img src="img/icons/account.png"></button>
+        </a>
+
+        <button class="img_button" id="btn_cart" onclick="showCart()"><img src="img/icons/shopping_cart.png"></button>
+    </div>
+</div>
+<div id="hr_container">
+    <hr id="logo_hr">
+</div>
+
+<div id="banner_section">
+    <div class="banner_subsection" id="top_banner">
+        <a href="index.html">
+            <p class="collection" id="new_year_collection">New (Year) Collection</p>
+            <img class="banner" id="banner_top" src="img/banners/banner_top.png">
+        </a>
+    </div>
+
+    <div class="banner_subsection" id="middle_banner">
+        <a href="index.html">
+            <p class="collection" id="black_white_collection">
+                <span style="color: black">Black</span>
+                <span style="color: #7a7a7a"> & </span>
+                <span style="color: antiquewhite">White</span>
+                <span style="color: #7a7a7a">Collection</span>
+            </p>
+
+            <img class="banner" id="banner2" src="img/banners/banner1.png">
+        </a>
+    </div>
+
+    <div class="banner_subsection" id="bottom_banner">
+        <a href="index.html">
+            <p class="collection" id="fall_collection">The rise of the Fall</p>
+
+            <img class="banner" id="banner3" src="img/banners/banner1.2.png">
+        </a>
+    </div>
+</div>
+<hr id="footer_hr">
+
+<footer>
+    <div id="information_section">
+        <p><b>Shopguide:</b></p>
+        <ul id="shopguide">
+            <li>Payment</li>
+            <li>Return</li>
+            <li>Shipment and delivery</li>
+            <li>General information</li>
+            <li>Policy</li>
+        </ul>
+    </div>
+
+    <p id="contacts">
+        <b>Need help?</b> <br><br>
+        Call us: 0886666666 <br>
+        Monday - Friday from 10:00 to 19:00
+    </p>
+
+
+    <div id="social_media">
+        <p>
+            <b>Follow us:</b>
+        </p>
+        <button class="img_button" id="btn_fb"><img src="img/icons/fb_logo.png"></button>
+        <button class="img_button" id="btn_ig"><img src="img/icons/ig_logo.png"></button>
+        <button class="img_button" id="btn_tw"><img src="img/icons/tw_logo.png"></button>
+    </div>
+</footer>
+</body>
+</html>

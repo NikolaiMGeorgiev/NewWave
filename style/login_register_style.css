@@ -1,0 +1,81 @@
+.form {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding: 5vh 5vw 5vh;
+    border: 2px solid black;
+    margin: 10vh 10vw 0;
+}
+
+#form_container {
+    position: absolute;
+    margin-top: 10vh;
+    height: 90vh;
+    width: 100%;
+}
+
+#form_container_login {
+    position: relative;
+    margin-top: 10vh;
+    height: 90vh;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#login_form {
+    position: absolute;
+    margin: auto;
+    min-width: 60vw;
+    min-height: 60vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#error {
+    margin-top: 10px;
+}
+
+#form_title {
+    font-size: 5vh;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form input {
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    height: 3vh;
+    font-size: 2vh;
+}
+
+.lbl {
+    margin-top: 2vh;
+    margin-bottom: 0;
+}
+
+.btn_submit {
+    margin: 5vh 0 2vh;
+    height: 5vh;
+    background-color: #c19814;
+    color: whitesmoke;
+    border: none;
+    font-size: 2vh;
+}
+
+.link {
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+    font-size: 2vh;
+}
+
+.lbl_error {
+    visibility: hidden;
+    min-height: 3vh;
+    font-size: 2vh;
+    color: red;
+}

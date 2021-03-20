@@ -1,0 +1,165 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #880D1E;
+    font-size: 3vh;
+    font-family: Garamond, sans-serif;
+}
+
+.header {
+    display: flex;
+    position: fixed;
+    box-sizing: border-box;
+    height: 10vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.4rem solid #cc0000;
+    z-index: 1;
+    background-color: ghostwhite;
+    box-shadow: 0 0.4rem black;
+}
+
+#hr_container {
+    position: fixed;
+    margin-top: 10vh;
+    z-index: 3;
+}
+
+#logo_hr {
+    position: fixed;
+    border-top: black solid 1vh;
+}
+
+#logo {
+    max-width: 100%;
+    height: 8vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    object-fit: scale-down;
+}
+
+.gender {
+    text-decoration: none;
+    color: black;
+}
+
+#gender_section {
+    margin-left: 1vw;
+    margin-right: 5vw;
+}
+
+#buttons {
+    margin-right: 1vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.img_button, .btn_close {
+    border: none;
+    background-color: transparent;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: scale-down;
+}
+
+.img_button:focus, .btn_close:focus {
+    outline: none;
+}
+
+#banner_section {
+    font-weight: bold;
+    margin-top: 11vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.collection {
+    margin: auto;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(80, 80, 80, 0.5);
+    top: 60%;
+    transform: translate(0, -50%);
+    color: antiquewhite;
+    font-size: 5vw;
+    text-align: center;
+    border: 0.2rem solid aliceblue;
+    border-right-style: none;
+    border-left-style: none;
+}
+
+.banner_subsection {
+    position: relative;
+    margin-bottom: -5px;
+}
+
+.banner {
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    min-height: 70vh;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .banner {
+        min-width: 100%;
+        width: inherit;
+    }
+}
+
+#footer_hr {
+    margin: 0;
+    border: 0.2rem solid #cc0000;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    border-top: 0.4rem solid black;
+    background-color: ghostwhite;
+}
+
+#new_year_collection {
+    color: rgb(186, 210, 231);
+    border-color: whitesmoke;
+}
+
+#black_white_collection {
+    background-color: rgba(204, 0, 0, 0.5);
+    border-color: #4B0000;
+}
+
+#fall_collection {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: goldenrod;
+    border-color: #c19814;
+}
+
+#social_media {
+    align-self: flex-start;
+    margin-left: 5vw;
+}
+
+#information_section {
+    margin-right: 5vw;
+}
+
+#shopguide {
+    list-style-type: none;
+    padding-left: 0;
+}
